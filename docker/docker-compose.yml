@@ -1,0 +1,7 @@
+version: '3'
+services:
+    netbox:
+        build: 
+          context: .
+        image: netbox:v10
+        command: /bin/bash -c "while true; do /bin/echo 'helloa'; sleep 5; done;"
